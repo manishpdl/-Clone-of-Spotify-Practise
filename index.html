@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assests/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&displ   ay=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home</a>
+                </div>
+                <div class="nav-option">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                 <div class=" options">
+                    <div class="lib-options  nav-option">
+<img src="./assests/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div> 
+                        <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    
+                 </div>
+                 <div class="lib-box">
+                    <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy,we'll help you </p>
+                     <button class="badge" style="font-weight: 700;">Create Playlists</button>    
+                </div>
+                
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                     <button class="badge" style="font-weight: 700;">Browse podcasts</button>    
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some Popular artists </p>
+                    <p class="box-p2">We'll keep you updated on new songs</p>
+                     <button class="badge" style="font-weight: 700;">Browse artists</button>    
+                </div>
+        </div> 
+        <div class="buttom">
+        <div class="buttom-link">
+        
+              <a href="#" class="link">Legal</a>
+              <a href="#"class="link"> Cookies</a>   
+              <a href="#"class="link">Safety & Privacy Center</a>   
+              <a href="#"class="link">About Ads</a>   
+              <a href="#"class="link">Privacy Policy</a>   
+              <a href="#"class="link">Accessibilty</a>   
+      
+       
+        </div>
+        <div class="cookie">
+            <a href="#">Cookies</a>
+        </div>
+        <div class="buttom-language">
+            <div class="language">
+            <i class="fa-solid fa-globe"></i>
+            <a href="#">English</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icon">
+                <img src="./assests/forward_icon.png" class="hide">
+                <img src="./assests/backward_icon.png">
+            </div>
+              <div class="sticky-nav-button">  <button class="badge nav-items hide" style="font-weight: 700;" >Explore Premium</button>    
+                <button class="badge nav-items" style="font-weight: 700;"><i class="fa-regular fa-circle-down" style="margin-right: 3px;"></i>Install App</button>    
+                <i class="fa-regular fa-user nav-items"></i></div>
+
+
+            </div>
+            
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" class="card-img">
+                    <p class="card-title">Top 50 - USA</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcibDvt7VKHP5CRdAugKM-yYrKtKYH6JF7yBtB9itoEA&s" class="card-img">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="data:image/png;base64,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" class="card-img">
+                    <p class="card-title">Top 50 - USA</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" class="card-img">
+                    <p class="card-title">Viral 50 - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+            </div>
+
+       
+
+            <h2>Trending now near you</h2>
+                
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://myrepublica.nagariknetwork.com/uploads/media/Swor%20Samrat%20Narayan%20Gopal.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Narayan Gopal</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="https://www.musiccafenepal.com/images/artists/prasant-tamang.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Prashant Tamang</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="https://english.onlinekhabar.com/wp-content/uploads/2022/09/The-Axe-Band-1024x1021.jpg" class="card-img">
+                    <p class="card-title">Top 50 - 1974 AD</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="https://nepathya.com.np/images/instagram/1.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Nepathya</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="/assests/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+            </div>
+            <h2>Featured Charts </h2>
+                
+            <div class="card-container">
+                <div class="card">
+                    <img src="/assests/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="/assests/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - Nepal</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+                <div class="card">
+                    <img src="/assests/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your Daily update of the most played tracks... </p>
+               
+                </div> 
+            </div>
+          <div class="footer">
+         <div class="line">
+          
+                    <div class="footer-list"> 
+
+                    <div class="footer-links">
+                     <a href="#" class="link">Legal</a>
+                     <a href="#"class="link"> Cookies</a>   
+                     <a href="#"class="link">Safety & Privacy Center</a>   
+                     <a href="#"class="link">About Ads</a>   
+                     <a href="#"class="link">Privacy Policy</a>   
+                     <a href="#"class="link">Accessibilty</a>     </div>
+                    <div> <p class="footer-copyright">&copy; 2024 ManishXSpotify</p></div>
+              
+                    </div>
+       
+          </div>
+        </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="https://www.musiccafenepal.com/images/artists/nepathya.jpg" class="album-image">
+            <div class="album-details" >
+                <a href="#" class="album-name" >Tal ko Pani</a>
+                <a href="#" class="singer"  >Nepathya</a>
+        </div>
+            <i class="fa-solid fa-plus album-icons " ></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assests/player_icon1.png" class="player-controls-icons">
+                    <img src="./assests/player_icon2.png" class="player-controls-icons">
+                    <img src="./assests/player_icon3.png" class="player-controls-icons" style="opacity: 1; height :2rem;">
+                    <img src="./assests/player_icon4.png" class="player-controls-icons">
+                    <img src="./assests/player_icon5.png" class="player-controls-icons">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time"> 0:00</span> 
+                <input type="range" min="0" max="100" class="progress-bar">
+            <span class="tot-time">3:33</span></div>
+            </div >
+            <div class="controls">
+                <i class="fa-solid fa-music control-icon"  style="opacity: 0.3;"></i>
+                <i class="fa-solid fa-hourglass-start control-icon"></i>
+                <i class="fa-brands fa-chromecast control-icon"></i>
+                <i class="fa-solid fa-volume-high control-icon"></i>
+                <input type="range" min="0" max="100" class="control-icon audio-range">
+                <i class="fa-solid fa-down-left-and-up-right-to-center control-icon"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html> 
